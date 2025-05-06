@@ -25,7 +25,7 @@ jobs:
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
-        working-directory: C:\Users\stili\source\repos\RestaurantTableBookingApp\Restaurant-Table-Booking-App\RestaurantTableBookingApp.API
+        working-directory: ./RestaurantTableBookingApp.API
 
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
