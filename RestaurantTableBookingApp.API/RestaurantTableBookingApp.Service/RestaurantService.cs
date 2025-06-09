@@ -18,7 +18,7 @@ namespace RestaurantTableBookingApp.Service
             this._restaurantRepository = restaurantRepository;
         }
 
-        public async Task<List<RestaurantModel>> GetAllRestaurantsAsync()
+        public async Task<IEnumerable<RestaurantModel>> GetAllRestaurantsAsync()
         {
             return await _restaurantRepository.GetAllRestaurantsAsync();
         }

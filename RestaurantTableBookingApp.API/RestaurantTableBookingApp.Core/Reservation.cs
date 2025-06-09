@@ -28,4 +28,6 @@ public partial class Reservation
     [ForeignKey("UserId")]
     [InverseProperty("Reservations")]
     public virtual User User { get; set; } = null!;
+
+    public bool ReminderSent { get; set; } = false;
 }
